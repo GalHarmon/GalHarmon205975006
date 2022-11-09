@@ -1,0 +1,16 @@
+.container {
+    margin: 20px 10px;
+    padding: 20px;
+    border: 15px red dotted;
+    border-radius: 20px;
+}
+
+a:hover{
+    background-color: yellow;
+}
+a:active{
+    background-color: aqua;
+}
+a:visited{
+    background-color: red;
+}
