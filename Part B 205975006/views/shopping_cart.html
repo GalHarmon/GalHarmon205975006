@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favor of Flavor</title>
+    <script defer src="../static/script.js"></script><!--defer = for read the script last-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../static/final.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../static/indexstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/Img/final logo.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./reviews.html">Reviews</a></li>
+                    <li><a href="./sale_your_dish.html">Sell your dish</a></li>
+                </ul>
+            </nav>
+            <p>
+                <div class="icons">
+                    <a href="./shopping_cart.html">
+                    <div class="fas fa-shopping-cart" id="cart"></div>
+                    </a>
+                    <a href="./user.html">
+                        <div class="fas fa-user"></div>
+                    </a>
+                    <div class="fas fa-search" id="search-btn"></div>
+                </div>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="Search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+            </p>  
+        </div>
+    </div>  
+    <br>
+    <div class="titles">
+        <div class="shopping-cart-grid">
+            <h1>Your cart!</h1>
+            <div class="gridItemShoppingCart">
+                <div class="content">
+                    <h3>Couscous</h3>
+                    <img src="../static/Img/Couscous.png">
+                    <br>
+                    <span class="price">11$ </span>
+                    <span class="quantity">qty : 2</span>
+                </div>
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="gridItemShoppingCart">
+                <div class="content">
+                    <h3>Meat ball</h3>
+                    <img src="../static/Img/Meat ball.png">
+                    <br>
+                    <span class="price">15$ </span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="gridItemShoppingCart">
+                <div class="content">
+                    <h3>Crack pie</h3>
+                    <img src="../static/Img/Crack pie.png">
+                    <br>
+                    <span class="price">7$ </span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+                <i class="fas fa-trash"></i>
+            </div>
+            <div class="total">Total to pay: 44$</div>
+        </div>  
+        <form action="../views/after_send_offer.html" class="cartForm">
+            <input type="submit" value="Checkout" class="btn"> 
+        </form>
+    </div>
+    
+</body>
+</html>

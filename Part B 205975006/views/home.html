@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favor of Flavor</title>
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="../static/final.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../static/indexstyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../static/Img/final logo.png" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./reviews.html">Reviews</a></li>
+                    <li><a href="./sale_your_dish.html">Sell your dish</a></li>
+                </ul>
+            </nav>
+            <p>
+                <div class="icons">
+                    <a href="./shopping_cart.html">
+                    <div class="fas fa-shopping-cart"></div>
+                    </a>
+                    <a href="./user.html">
+                        <div class="fas fa-user"></div>
+                    </a>
+                    <div class="fas fa-search" id="search-btn"></div>
+                </div>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="Search here...">
+                    <label for="search-box" class="fas fa-search"></label>
+                </form>
+            </p>
+            
+        </div>
+    </div> 
+    <div class="home">
+        <h2>Fresh products for you</h2>
+    </div>
+    <div class="filterSection">
+        <i class="fas fa-filter"></i>
+        <form action="./home.html" class="filterForm"><!--change the action in part C-->
+            <input list="Food style" class="longForm" name="Food style" placeholder="Type your food style..." required>
+            <datalist id="Food style">
+                <option value="Asian">Asian</option>
+                <option value="Italian">Italian</option>
+                <option value="Vagan">Vagan</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Sweets">Sweets</option>
+                <option value="Other">Other</option>
+            </datalist> 
+            <input list="Distance for pick-up" class="longForm" placeholder="Type distance for pick-up" required>
+            <datalist id="Distance for pick-up">
+                <option value="Until 5 km">Until 5 km</option>
+                <option value="Until 10 km">Until 10 km</option>
+                <option value="Until 15 km">Until 15 km</option>
+                <option value="No limit">No limit</option>
+            </datalist> 
+            <input type="submit" value="Apply" class="btn">
+        </form>
+    </div>
+    <div class="gridContainerHomepage">
+        <div class="gridItem">
+            <img src="../static/Img/Meat ball.png" alt="">
+            <h3>Meat ball</h3>
+            <div class="price"> 16$ </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="gridItem">
+            <img src="../static/Img/Sheperd pie.png" alt="">
+            <h3>Sheperd pie</h3>
+            <div class="price"> 13.5$ </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="gridItem">
+            <img src="../static/Img/Choclate cake.png" alt="">
+            <h3>Choclate cake</h3>
+            <div class="price"> 8$ </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+        <div class="gridItem">
+            <img src="../static/Img/Onion soup.png" alt="">
+            <h3>Onion soup</h3>
+            <div> 9$ </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a href="#" class="btn">Add to cart</a>
+        </div>
+    </div>   
+</body>
+</html>

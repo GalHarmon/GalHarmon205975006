@@ -1,0 +1,299 @@
+﻿body {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar { /*locate the logo*/
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+}
+nav { /*locate the manu*/
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type:none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a:hover {
+    color: orange;
+    }
+a {
+    color: #555;
+    text-decoration: none;/*take off the "underlind sign from the menu componenets*/
+}
+p {
+    color: #555;/*match the same color to the menu color*/
+}
+.container {
+    max-width: 100%x;
+    padding-left: 25px; /*set equal space from both of the sides*/
+    padding-right: 25px;
+    position: fixed;
+    justify-content: space-between;
+    top:0;
+    right:0;
+    left:0;
+    align-items:center;
+    padding:0.5rem 9%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);/*fade out in the end of the header box*/
+}
+html {
+    overflow-x: hidden;
+    scroll-margin-top: 7rem;
+}
+body {
+    background:#eee;
+}
+.icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #fff;
+    color:black;
+    font-size: 1.5rem;
+    margin-left: .2rem;
+    cursor: pointer;
+    text-align: center;
+}
+.icons div:hover{
+    color: orange;
+}
+.search-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:30%;
+    height:3.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.turn-on{/*the income of the "search" component*/
+    right:2rem;
+    transition: .4s linear;
+}
+.search-form input{
+    height:75%;
+    width:75%;
+    text-transform: none;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
+search-form label{
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+.active{/*class for case that the user can get an indication regarding the page he is on*/
+    color: orange; 
+}
+.fa-star{
+    padding-top: 1vh;
+    padding-bottom: 1.5vh;
+}
+#cart, #user{
+    color: orange; 
+}
+.login-form{
+    padding-top: 10rem;
+    text-align: center;
+}
+.cartForm{
+    text-align: center;
+}
+input, select{
+    height: 5vh;
+    width: 15vw;
+    margin: 5vh 5vh;
+}
+.login-form p a{
+    color:orange;
+    text-decoration: underline;
+}
+.longForm{
+    margin: 2vh 2vh;
+}
+#addImageButton{
+    display:block;
+    width:10vw; 
+    height:5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn{
+    background: burlywood;
+    width:10vw; 
+    height:5vh;
+    border: #555 solid;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.4rem;  
+}
+.total{
+    font-size: 1.5rem;
+    padding:1rem 0;
+    text-align: center;
+    color:black;
+}
+.happyChildPhoto{
+    padding-top: 20vh;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+@keyframes mymove{
+    from{
+        left:0%
+    }
+    to{
+        left: 100%;
+    }
+}
+#backHomepage{
+    padding-top: 0px;
+}
+h1, h3, h2{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: chocolate;
+}
+.shopping-cart-grid{
+    display: grid;
+    padding-top: 20vh;
+    border-radius: .5rem;
+    row-gap: 5vh;
+    align-items: center;
+}
+.gridItemShoppingCart{
+    border: #555 solid;
+    text-align: center;
+    width: 20vw;
+    box-shadow:  5px 10px 8px rgba(0,0,0,.1);
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 0.4rem;
+}
+.gridItemShoppingCart img{
+    display: block;
+    height: 15vh;
+    width: 12vw;
+    margin: auto;
+}
+.gridItemShoppingCart .fa-trash{
+    font-size: 1.5rem;
+    padding: 1vw;
+    color:lightpink;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    background: url(../static/Img/banner3.png) no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    font-family:  'Poppins', sans-serif;
+    font-size: large;
+}
+.gridContainerHomepage{
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 5vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5vw 5vh;
+}
+.gridItem{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow:  5px 10px 8px rgba(0,0,0,.1);
+    border-radius:0.5em;
+}
+.gridItem img{
+    display: block;
+    height: 16vh;
+    width: 13vw;
+    margin: auto;
+    border-radius: 0.4rem;
+}
+@media only screen and (max-width: 500px) {/*control when you minimiza the windox and the navbar get wider -> */
+    .titles{
+        margin-top: 20%;
+    }
+}
+.filterSection{
+    padding-top: 2%;
+    padding-left: 5%;
+}
+.filterForm{
+    display: inline;
+}
+.fa-filter{
+    font-size:large;
+}
+.reviewPage, .aboutPage{
+    padding-top: 10%;
+}
+@media only screen and (max-width: 500px) {/*control when you minimiza the windox and the navbar get wider -> */
+    .reviewPage{
+        margin-top: 30%;
+    }
+}
+.reviewPage img{
+    border-radius: 10rem;
+}
+.price{
+    color: #555;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+@media only screen and (max-width: 500px) {/*control when you minimiza the windox and the navbar get wider -> */
+    .aboutPage{
+        margin-top: 40%;
+    }
+}
+.itemGeneral{
+    display: inline-block;
+    margin: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.generalSec{
+    display: grid;
+    text-align: center;
+}
+.fa-facebook, .fa-instagram, .fa-twitter{
+    cursor: pointer;
+    height: 5vw;
+    width: 5vh;
+    color: #555;
+    padding-top: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
