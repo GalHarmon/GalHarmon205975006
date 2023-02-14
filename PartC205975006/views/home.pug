@@ -1,0 +1,36 @@
+﻿extends layout
+block content
+  |  
+  .home
+    h2 Fresh products for you
+  .filterSection
+    i.fas.fa-filter
+    form.filterForm(action='/home_after_search', method='get', id='searchDishForm')
+      input.longForm(list='Food style', name='dishStyle', id='dishStyle' placeholder='Type your food style...', required='')
+      datalist(id='Food style')
+        option(value='Asian') Asian
+        option(value='Italian') Italian
+        option(value='Vagan') Vagan
+        option(value='Pizza') Pizza
+        option(value='Sushi') Sushi
+        option(value='Sweets') Sweets
+        option(value='Other') Other
+      |  
+      input.btn(type='submit', value='Apply')
+  .gridContainerHomepage
+    each dish in dishes
+      .gridItem
+        img(src=dish.pathToPhoto, alt='No photo added...')
+        .title_dish
+          td=dish.dishName
+        .price 
+          td=dish.pricePerUnit + '$'
+        .stars
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star
+          i.fas.fa-star-half-alt
+        form(action='/addToCart', method='get')
+          input(type="text", name="itemForCart", id="itemForCart", style="display: none", value=dish.id)
+          input(type="submit", class="newBtnAddCart", value="Add to cart")    

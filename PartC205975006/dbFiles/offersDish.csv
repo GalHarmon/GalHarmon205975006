@@ -1,0 +1,5 @@
+﻿userEmail,id,dishName,generalDis,foodStyle,quantity,pricePerUnit,pickUpAddress,expiryDate,pathToPhoto
+gal@gmail.com,999,Meat ball,The best you ever eat,Italian,8,6,hamamchihim 152 kefar warburg,2025-11-12,../Img/Meat ball.png
+tal@gmail.com,1000,Sheperd pie,The original taste of the famouse sheperd pie,Italian,6,4,hamamchihim 152 kefar warburg,2025-11-13,../Img/Sheperd pie.png
+mika@gmail.com,1001,Choclate cake,,Sweets,5,34,hamamchihim 152 kefar warburg,2025-11-14,../Img/Choclate cake.png
+alon@gmail.com,1002,Onion soup,With cheese and breade,Vagan,5,4,hamamchihim 152 kefar warburg,2025-11-15,../Img/Onion soup.png

@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Favor of Flavor
+    script(defer='', src='../script.js')
+    // defer = for read the script last
+    link(rel='stylesheet', href='https://unpkg.com/swiper@7/swiper-bundle.min.css')
+    link(rel='shortcut icon', href='../final.png')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+    link(rel='stylesheet', href='../indexstyle.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+block content
+  |  
+  .titles
+    form#signInForm.login-form(action='/find', method='get')
+      h1 Login now
+      input#email(type='email', name='email', placeholder='Type your email...')
+      br
+      input#secondTypePass(type='password', name='secondTypePass', placeholder='Type your password...', required='')
+      p
+        | Don&apos;t have an account? 
+        a(href='./create_new.pug') Create now!
+      input(type='submit', value='Login now', onclick='userLogIn()')

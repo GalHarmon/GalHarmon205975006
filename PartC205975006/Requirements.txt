@@ -1,0 +1,38 @@
+Modules:
+1.npm
+2.mysql2
+3.body-parser
+4.express
+5.pug
+6.jsontocsv
+7.path
+8.cookie-parser
+9.csv-parse
+10.csv-stringify
+
+Paths:
+users table-
+http://localhost:3000/createTableUsers
+"CREATE TABLE  if not exists users (email VARCHAR(255) NOT NULL PRIMARY KEY, firstName varchar(255) NOT NULL , lastName varchar(255), phoneNumber varchar(255) NOT NULL, address varchar(255) NOT NULL, secondTypePass varchar(255) default null)"
+
+http://localhost:3000/insertUsers
+http://localhost:3000/showAllUsers
+http://localhost:3000/dropTableUsers
+
+
+offersDish table-
+http://localhost:3000/createOffersDish
+"CREATE TABLE if not exists offersDish (userEmail VARCHAR(255), id int NOT NULL AUTO_INCREMENT PRIMARY KEY, dishName VARCHAR(255) NOT NULL, generalDis varchar(1000), foodStyle VARCHAR(255) NOT NULL check (foodStyle in ('Asian', 'Italian', 'Vagan', 'Pizza', 'Sushi', 'Sweets', 'Other')) , quantity int NOT NULL, pricePerUnit int NOT NULL, pickUpAddress VARCHAR(255) NOT NULL,expiryDate date not null,pathToPhoto varchar(10000),foreign key (userEmail) references users (email));"
+
+http://localhost:3000/insertOffersDish
+http://localhost:3000/showAllOffers
+http://localhost:3000/dropTableOffersDish
+
+cartsPerUser table-
+http://localhost:3000/createCartsPerUser
+"CREATE TABLE if not exists cartsPerUser ( userEmail VARCHAR(255) NOT NULL,dishId int NOT NULL, quantityToBuy int NOT NULL, primary key (userEmail, dishId),foreign key (userEmail) references users (email),foreign key (dishId) references offersDish (id));"
+
+http://localhost:3000/insertCartsPerUser
+http://localhost:3000/showAllCartsPerUser
+http://localhost:3000/dropTableCartsPerUser
+

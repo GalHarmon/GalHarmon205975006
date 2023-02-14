@@ -1,0 +1,11 @@
+extends layout
+block content
+  |  
+  .happyChildPhoto
+    img(src='../Img/after_sent_offer.png')
+  |  
+  h1 Congrats!
+  h3 Your action succeeded!
+  form#backHomepage.login-form(action='./home.pug')
+    input.btn(type='submit', value='Back to homepage')
+    

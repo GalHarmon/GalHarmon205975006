@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Favor of Flavor
+    script(defer='', src='../script.js')
+    // defer = for read the script last
+    link(rel='stylesheet', href='https://unpkg.com/swiper@7/swiper-bundle.min.css')
+    link(rel='shortcut icon', href='../final.png')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+    link(rel='stylesheet', href='../indexstyle.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+block content
+  |  
+  .titles
+    form#createNewUser.login-form(action='/newUser', method='post', name='createNewUser')
+      // in the action need /insertuserintoDB
+      h1 Create new user
+      input#emailNew.longForm(type='email', name='email', placeholder='Type your email...', required='')
+      br
+      input#firstNameNew.longForm(placeholder='Type your first name...', name='firstName', required='')
+      br
+      input#lastNameNew.longForm(placeholder='Type your last name...', name='lastName')
+      br
+      input#phoneNumberNew.longForm(type='tel', name='phoneNumber', placeholder='Type your phone number...', required='', pattern='[0-9]{3}-[0-9]{7}')
+      br
+      small (Format: 123-4567890)
+      br
+      input#addressNew.longForm(placeholder='Type your address...', name='address')
+      br
+      input#firtTypePass.longForm(type='password', placeholder='Type your password...', required='', name='firtTypePass')
+      br
+      input#newsecondTypePass.longForm(type='password', placeholder='Confirm your password...', required='', name='secondTypePass')
+      br
+      input.btn(type='submit', value='Create now', onclick='creatNew()')

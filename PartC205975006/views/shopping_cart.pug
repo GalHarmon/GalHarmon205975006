@@ -1,0 +1,24 @@
+extends layout
+block content
+  br
+  .titles
+    .shopping-cart-grid
+      h1 Your cart!
+      each item in itemsInCart
+        .gridItemShoppingCart
+          .content
+            .title_items_carts
+              td=item.dishName
+            img(src=item.pathToPhoto, alt='No photo added...')
+            br
+            .price 
+              td=item.pricePerUnit+'$'
+            .quantity 
+              td='qty : '+item.quantityToBuy
+          form(action='/deletItemFromCart', method='post')
+            input(type="text", name="itemToDel", id="itemToDel", style="display: none", value=item.id)
+            input(type='submit', value='Delete', class = "newBtnAddCart")
+      .total
+        td='Total to pay: '+ totalToPay + '$'
+        form(action='/checkOutTheCart', method='post')
+              input(type="submit", class="newBtnCheckout", value="Checkout")  

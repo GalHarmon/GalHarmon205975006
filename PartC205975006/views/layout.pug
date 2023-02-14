@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Favor of Flavor
+    script(defer='', src='../script.js')
+    // defer = for read the script last
+    link(rel='stylesheet', href='https://unpkg.com/swiper@7/swiper-bundle.min.css')
+    link(rel='shortcut icon', href='../final.png')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css')
+    link(rel='stylesheet', href='../indexstyle.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .container
+      .navbar
+        .logo
+          img(src='../Img/final logo.png', width='125px')
+        nav
+          ul
+            li
+              a(href='./home.pug') Home
+            li
+              a(href='./about.pug') About
+            li
+              a(href='./reviews.pug') Reviews
+            li
+              a(href='./sale_your_dish.pug') Sell your dish
+        p
+        .icons
+          a(href='./shopping_cart.pug')
+            .fas.fa-shopping-cart
+          a(href='./user.pug')
+            .fas.fa-user
+          #search-btn.fas.fa-search
+        form.search-form(action='')
+          input#search-box(type='search', placeholder='Search here...')
+          label.fas.fa-search(for='search-box')
+        p
+    |  
+    block content

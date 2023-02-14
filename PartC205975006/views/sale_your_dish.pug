@@ -1,0 +1,38 @@
+extends layout
+block content
+  |  
+  .titles
+    form#sendOfferForm.login-form(action='/sendOffer', method='post', name='sellForm')
+      h1 Offer your dish
+      input#dishNameFrom.longForm(type='text', name='dishName', placeholder='Type the name of the dish...', required='')
+      br
+      input#generalDisFrom.longForm(type='text', name='generalDis', placeholder='Type general discription...')
+      br
+      input#foodStyleFrom.longForm(list='Food style', name='foodStyle', placeholder='Type your food style...', required='')
+      datalist(id='Food style')
+        option(value='Asian') Asian
+        option(value='Italian') Italian
+        option(value='Vagan') Vagan
+        option(value='Pizza') Pizza
+        option(value='Sushi') Sushi
+        option(value='Sweets') Sweets
+        option(value='Other') Other
+      br
+      input#quantityFrom.longForm(type='number', name='quantity', placeholder='Type quantity of offered dish...', required='')
+      br
+      input#pricePerUnitFrom.longForm(type='number', name='pricePerUnit', placeholder='Type price per unit of offered dish...', required='')
+      br
+      input#pickUpAddressFrom.longForm(type='text', name='pickUpAddress', placeholder='Type pick-up address...', required='')
+      br
+      label.longForm Type expiry date
+      br
+      input#exipryDate.longForm(type='date', name='expiryDate', onchange='TDate()', required='')
+      br
+      br
+      label.longForm Choose images to upload (internet original link only! -> right click -> "Copy Image Address")
+      br
+      label.longForm *Not dircectly from Google photo - please go to the site that Google refers to and copy the image link from there
+      br
+      input#photoFrom.longForm(type='text', name='pathToPhoto', placeholder='Paste image address...')
+      br
+      input.btn(type='submit', value='Send offer!', onclick='sendOffer()')

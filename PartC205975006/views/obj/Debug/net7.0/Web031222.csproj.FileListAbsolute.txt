@@ -1,0 +1,5 @@
+/Users/galharmon/Desktop/Web031222/Web031222/obj/Debug/net7.0/Web031222.csproj.AssemblyReference.cache
+/Users/galharmon/Desktop/Web031222/Web031222/obj/Debug/net7.0/Web031222.GeneratedMSBuildEditorConfig.editorconfig
+/Users/galharmon/Desktop/Web031222/Web031222/obj/Debug/net7.0/Web031222.AssemblyInfoInputs.cache
+/Users/galharmon/Desktop/Web031222/Web031222/obj/Debug/net7.0/Web031222.AssemblyInfo.cs
+/Users/galharmon/Desktop/Web031222/Web031222/obj/Debug/net7.0/Web031222.csproj.CoreCompileInputs.cache

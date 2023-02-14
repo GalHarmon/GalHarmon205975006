@@ -1,0 +1,14 @@
+extends layout
+block content
+  |  
+  .happyChildPhoto
+    img(src='../Img/after_sent_offer.png')
+  |  
+  h1 Congrats!
+  h3 Your action succeeded!
+  each address in addressPerDish
+    .total
+        td='Pick-up the '+address.dishName + ' from ' + address.pickUpAddress
+  form#backHomepage.login-form(action='./home.pug')
+    input.btn(type='submit', value='Back to homepage')
+    
